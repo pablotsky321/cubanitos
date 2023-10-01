@@ -1,0 +1,8 @@
+{
+  "name": "cubanitos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "b7c38ac4"
+}
