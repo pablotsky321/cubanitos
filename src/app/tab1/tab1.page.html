@@ -12,6 +12,13 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<table>
+  <tbody>
+  <tr *ngFor="let reg of registros">
+    <td>{{reg.nombre}}</td>
+    <td>{{reg.descripcion}}</td>
+    <td>{{reg.valor}}</td>
+  </tr>
+</tbody>
+</table>
 </ion-content>

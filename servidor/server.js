@@ -17,7 +17,7 @@ db.connect((err) => {
     }
   });
 
-  app.get('/api/obtener-productos', (req, res) => {
+  app.get('/api/productos', (req, res) => {
     const sql = 'SELECT * FROM producto'; 
     db.query(sql, (err, result) => {
       if (err) {
