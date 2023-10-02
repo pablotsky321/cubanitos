@@ -1,0 +1,16 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+  private apiUrl = 'http://localhost:3000/api/obtener-productos'; // Reemplaza con la URL de tu servidor Node.js
+
+  constructor(private http: HttpClient) { }
+
+  // Método para obtener registros desde el servidor
+  obtenerRegistros() {
+    return this.http.get(`${this.apiUrl}/obtener-productos`);
+  }
+}

@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+import { DataService } from './data.service';
+
+@Component({
+  selector: 'app-lista-registros',
+  templateUrl: './lista-registros.component.html',
+  styleUrls: ['./lista-registros.component.css']
+})
+export class ListaRegistrosComponent implements OnInit {
+  registros: any[]; // Variable para almacenar los registros
+
+  constructor(private dataService: DataService) { }
+
+  ngOnInit() {
+    this.dataService.obtenerRegistros().subscribe(data => {
+      this.registros = data as any[];
+    });
+  }
+}
