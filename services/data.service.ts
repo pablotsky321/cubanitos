@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'http://localhost:3000/api/productos'; // Reemplaza con la URL de tu servidor Node.js
+  private apiUrl = 'http://localhost:3000/api/productos'; 
 
   constructor(private http: HttpClient) { }
 
