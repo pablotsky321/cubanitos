@@ -11,6 +11,6 @@ export class DataService {
 
   // Método para obtener registros desde el servidor
   obtenerRegistros() {
-    return this.http.get(`${this.apiUrl}/productos`);
+    return this.http.get(`${this.apiUrl}`);
   }
 }

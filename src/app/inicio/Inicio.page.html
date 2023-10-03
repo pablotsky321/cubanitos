@@ -12,13 +12,16 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-<table>
-  <tbody>
-  <tr *ngFor="let reg of registros">
-    <td>{{reg.nombre}}</td>
-    <td>{{reg.descripcion}}</td>
-    <td>{{reg.valor}}</td>
-  </tr>
-</tbody>
-</table>
+  <body>
+<section *ngFor="let reg of registros" class="Productos">
+  <article class="">
+    <button class="Producto">
+    <img [src]="reg.imagen">
+    <p>{{reg.nombre}}</p>
+    <p>{{reg.descripcion}}</p>
+    <p>{{reg.valor}}</p>
+  </button>
+  </article>
+</section>
+</body>
 </ion-content>
