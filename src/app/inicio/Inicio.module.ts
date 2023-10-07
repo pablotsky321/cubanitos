@@ -17,4 +17,4 @@ import { InicioPageRoutingModule } from './Inicio-routing.module';
   ],
   declarations: [InicioPage]
 })
-export class Tab1PageModule {}
+export class InicioPageModule {}

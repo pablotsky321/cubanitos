@@ -14,13 +14,13 @@
   </ion-header>
   <body>
 <section *ngFor="let reg of registros" class="Productos">
-  <article class="">
-    <button class="Producto">
+  <article>
+    <ion-button class="Producto" (click)='ver_producto(reg.id)'>
     <img [src]="reg.imagen">
     <p>{{reg.nombre}}</p>
     <p>{{reg.descripcion}}</p>
     <p>{{reg.valor}}</p>
-  </button>
+  </ion-button>
   </article>
 </section>
 </body>

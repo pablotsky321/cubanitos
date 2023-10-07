@@ -8,8 +8,8 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../inicio/Inicio.module').then(m => m.Tab1PageModule)
+        path: 'inicio',
+        loadChildren: () => import('../inicio/Inicio.module').then(m => m.InicioPageModule)
       },
       {
         path: 'carrito',
@@ -28,7 +28,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/inicio',
     pathMatch: 'full'
   }
 ];
