@@ -6,6 +6,13 @@
 
 <ion-content [fullscreen]="true">
  <body>
-  <p>@id_producto</p>
+  <section *ngFor="let reg of resultado">
+    <article>
+      <img [src]="reg.imagen">
+      <p>{{reg.nombre}}</p>
+      <p>{{reg.descripcion}}</p>
+      <p>{{reg.valor}}</p>
+    </article>
+  </section>
  </body>
 </ion-content>
