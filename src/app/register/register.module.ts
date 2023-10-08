@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { OrdenActualPageRoutingModule } from './orden-actual-routing.module';
+import { RegisterPageRoutingModule } from './register-routing.module';
 
-import { OrdenActualPage } from './orden-actual.page';
+import { RegisterPage } from './register.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OrdenActualPageRoutingModule
+    RegisterPageRoutingModule
   ],
-  declarations: [OrdenActualPage]
+  declarations: [RegisterPage]
 })
-export class OrdenActualPageModule {}
+export class RegisterPageModule {}

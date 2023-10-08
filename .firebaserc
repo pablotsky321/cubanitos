@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "cubanitos-9d80d": {
+      "hosting": {
+        "app": [
+          "cubanitos-9d80d"
+        ]
+      }
+    },
+    "cubanitosauth": {
+      "hosting": {
+        "app": [
+          "cubanosapp"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cubanitosauth"
+  }
+}

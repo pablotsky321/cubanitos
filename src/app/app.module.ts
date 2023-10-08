@@ -11,7 +11,6 @@ import { DataService } from 'services/data.service';
 import { FormsModule } from '@angular/forms';
 
 
-
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule,FormsModule],

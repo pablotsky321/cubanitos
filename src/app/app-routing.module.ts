@@ -19,10 +19,16 @@ const routes: Routes = [
     loadChildren: () => import('./cuenta/cuenta.module').then( m => m.CuentaPageModule)
   },
   {
-    path: 'orden-actual',
-    loadChildren: () => import('./orden-actual/orden-actual.module').then( m => m.OrdenActualPageModule)
-  }
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }
 
+  
 ];
 @NgModule({
   imports: [
