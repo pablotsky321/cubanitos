@@ -26,9 +26,9 @@ export class DataService {
     return this.http.get(url);
   }
 
-  create_user(cliente:any){
+  create_user(cliente:{}){
     const url=`${this.insertClienteUrl}`
-    return this.http.post('url',cliente)
+    return this.http.post(url,cliente)
   }
 
 }

@@ -18,7 +18,7 @@ export class RegisterPage implements OnInit {
   constructor(private dataS:DataService,private rout:Router) { }
   
   confirmaClave(){
-    if (this.clave!=this.clave){
+    if (this.clave!=this.confirmarClave){
       alert('Las contraseñas no coinciden')
       return false
     }else{
@@ -30,11 +30,17 @@ export class RegisterPage implements OnInit {
     if (!this.confirmaClave()){
       alert('Las contraseñas no coinciden')
     }else{
-      const cliente={correo:this.correo,nombres:this.nombres,apellidos:this.apellidos,telefono:this.numero_celular,clave:this.clave}
+      try{
+      let cliente={correo:this.correo,nombres:this.nombres,apellidos:this.apellidos,telefono:this.numero_celular,clave:this.clave}
       this.dataS.create_user(cliente).subscribe((results)=>{
         console.log(results.toString)
       });
       this.rout.navigate(['/login'])
+    }catch(Exception){
+
+      console.log(Exception)
+
+    }
     }
   }
 

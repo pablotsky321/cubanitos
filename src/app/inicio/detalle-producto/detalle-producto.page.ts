@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from 'services/cart.service';
 import { DataService } from 'services/data.service';
+import { CarritoPage } from 'src/app/carrito/carrito.page';
 
 @Component({
   selector: 'app-detalle-producto',
@@ -10,7 +12,7 @@ import { DataService } from 'services/data.service';
 export class DetalleProductoPage implements OnInit {
   id_producto!:string;
   resultado:any;
-  constructor(private route: ActivatedRoute,private dataService:DataService) { }
+  constructor(private route: ActivatedRoute,private dataService:DataService,private cartS:CartService) { }
 
   ngOnInit() {
   const id_producto=this.route.snapshot.paramMap.get('id_producto');
@@ -21,5 +23,11 @@ export class DetalleProductoPage implements OnInit {
   });
 
   }
+
+agregarCarrito(){
+
+  this.cartS.agregarProducto(this.resultado[0]);
+
+}
 
 }

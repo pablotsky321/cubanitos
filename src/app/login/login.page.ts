@@ -17,14 +17,12 @@ export class LoginPage implements OnInit {
   login(){
     this.dataS.login_user(this.correo,this.clave).subscribe((data) => {
     this.resultado = data as any[];
-    });
-
     if(this.resultado.length==0){
       alert('Correo o contraseña son incorrectos')
     }else{
-      this.rout.navigate(['tabs/inicio'])
+      this.rout.navigate(['tabs'])
     }
-
+    });
   }
 
   regist(){

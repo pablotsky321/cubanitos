@@ -6,13 +6,14 @@
 
 <ion-content [fullscreen]="true">
  <body>
-  <section *ngFor="let reg of resultado">
-    <article>
+  <section *ngFor="let reg of resultado" class="contenedor">
+    <article class="detalle">
       <img [src]="reg.imagen">
       <p>{{reg.nombre}}</p>
       <p>{{reg.descripcion}}</p>
       <p>{{reg.valor}}</p>
     </article>
+    <ion-button (click)="agregarCarrito()">Agregar al carrito</ion-button>
   </section>
  </body>
 </ion-content>
