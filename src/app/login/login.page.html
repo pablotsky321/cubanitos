@@ -1,13 +1,22 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <body>
+    <section class="form">
+    <img class="avatar">
+    <h1>Inicio de sesion</h1>
+    <section  class="formulario">
+    <ion-input type="email" placeholder="email" [(ngModel)]="correo"></ion-input>
+    <ion-input type="password" placeholder="contraseña" [(ngModel)]="clave"> </ion-input>
+    <article class="botones">
+    <ion-button (click)="login()">Iniciar sesion</ion-button>
+    <ion-button>Registrarse</ion-button>
+    <ion-button>
+      <ion-icon name="logo-google"></ion-icon>
+      Iniciar sesion con google
+    </ion-button>
+   </article>
+  </section>
+  </section>
+  </body>
 </ion-content>

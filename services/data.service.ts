@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
   private apiUrl = 'http://localhost:3000/api/productos'; 
   private serverUrl = 'http://localhost:3000/api/productos'
+  private clienteServer = 'http://localhost:3000/api/clientes'
   constructor(private http: HttpClient) { }
 
   // Método para obtener registros desde el servidor
@@ -16,6 +17,11 @@ export class DataService {
 
   verPr(id_producto:String){
     const url = `${this.serverUrl}/${id_producto}`;
+    return this.http.get(url);
+  }
+
+  login_user(correo_cliente:String,clave:String){
+    const url=`${this.clienteServer}/${correo_cliente}/${clave}`;
     return this.http.get(url);
   }
 

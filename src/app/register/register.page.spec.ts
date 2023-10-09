@@ -5,11 +5,12 @@ describe('RegisterPage', () => {
   let component: RegisterPage;
   let fixture: ComponentFixture<RegisterPage>;
 
-  beforeEach(async(() => {
-    fixture = TestBed.createComponent(RegisterPage);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  }));
+  beforeEach(async () => { // Asegúrate de que esta función esté marcada como async
+    await TestBed.configureTestingModule({
+      declarations: [RegisterPage],
+      // ...otros ajustes de configuración
+    }).compileComponents();
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
