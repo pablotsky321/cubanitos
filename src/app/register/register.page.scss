@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    }
+
+.form{
+    width: 600px;
+    height: 550px;
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 50px;
+    background-color:whitesmoke;
+}
+
+.form h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.form ion-input{
+    margin-bottom: 10px;
+}

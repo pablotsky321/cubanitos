@@ -26,6 +26,10 @@ export class LoginPage implements OnInit {
     }
 
   }
+
+  regist(){
+    this.rout.navigate(['/register'])
+  }
   
      
   ngOnInit() {

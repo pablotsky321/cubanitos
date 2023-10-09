@@ -28,7 +28,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/login',
+    redirectTo: 'tabs/inicio',
     pathMatch: 'full'
   }
 ];
