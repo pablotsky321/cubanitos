@@ -3,6 +3,7 @@ import { OnInit } from '@angular/core';
 import { DataService } from 'services/data.service';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { ClientService } from 'services/client.service';
 @Component({
   selector: 'app-Inicio',
   templateUrl: 'Inicio.page.html',
@@ -12,7 +13,7 @@ import { Router } from '@angular/router';
 export class InicioPage implements OnInit {
   
   registros: any[]=[]; // Variable para almacenar los registros
-  constructor(private dataService: DataService,private router:Router) { }
+  constructor(private dataService: DataService,private router:Router,private cl:ClientService) { }
 
   ver_producto(id_producto:String) {
     this.router.navigate(['inicio/detalle-producto',id_producto]);
@@ -21,8 +22,8 @@ export class InicioPage implements OnInit {
   ngOnInit() {
     this.dataService.obtenerRegistros().subscribe(data => {
       this.registros = data as any[];
+      console.log(this.cl.getCliente())
     });
-
   }
 
 }
