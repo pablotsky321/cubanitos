@@ -6,10 +6,7 @@ import { CuentaPage } from './cuenta/cuenta.page';
 import { LoginPage } from './login/login.page';
 const routes: Routes = [
 
-  {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
-  },
+  
   {
     path: '',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
@@ -17,6 +14,11 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+
+  {
+    path: '',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
   {
     path: 'inicio',

@@ -6,12 +6,14 @@
 
 <ion-content [fullscreen]="true">
   <body>
-<section *ngFor="let r of productos">
-<section>
+<section *ngFor="let r of productos" class="contenedor">
+<section class="productos">
   <p>{{r.nombre}}</p>
   <p>{{r.descripcion}}</p>
-  <p>{{r.precio}}</p>
+  <p>{{r.valor}}</p>
 </section>
+<br>
 </section>
+<ion-button *ngIf="mostrarComponente">Realizar orden</ion-button>
   </body>
 </ion-content>
