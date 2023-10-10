@@ -14,10 +14,22 @@ export class CarritoPage implements OnInit {
 
   ngOnInit() {
     this.productos=this.cartS.obtenerCarrito();
-    if(this.productos.length==0){
-      this.mostrarComponente=false
-    }else if(this.productos.length>0){
+    this.actualizar()
+  }
+
+  actualizar(){
+    if(this.productos.length>0){
       this.mostrarComponente=true
+    }else{
+      this.mostrarComponente=false
     }
   }
+
+  eliminarP(id_producto:string){
+
+    this.cartS.eliminarProducto(id_producto);
+    this.actualizar()
+  
+  }
+
 }

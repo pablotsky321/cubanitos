@@ -4,9 +4,11 @@ body{
 }
 .productos{
     border-color: black;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
     width: 500px;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 .productos p{
     margin-left: 20px;

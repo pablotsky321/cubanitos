@@ -20,4 +20,11 @@ export class CartService{
         return this.carrito
 
     }
+
+    eliminarProducto(id_producto: string) {
+      const index = this.carrito.findIndex((producto) => producto.id === id_producto);
+      if (index !== -1) {
+        this.carrito.splice(index, 1);
+      }
+    }
 }
