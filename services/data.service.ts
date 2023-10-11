@@ -5,10 +5,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'http://localhost:3000/api/productos'; 
-  private serverUrl = 'http://localhost:3000/api/productos';
-  private loginUrl = 'http://localhost:3000/api/clientes/login';
-  private insertClienteUrl='http://localhost:3000/registro_cliente';
+  private apiUrl = 'https://3e9d-179-19-144-202.ngrok-free.app/api/productos'; 
+  private serverUrl = 'https://3e9d-179-19-144-202.ngrok-free.app/api/productos';
+  private loginUrl = 'https://3e9d-179-19-144-202.ngrok-free.app/api/clientes/login';
+  private insertClienteUrl='https://3e9d-179-19-144-202.ngrok-free.app/registro_cliente';
   constructor(private http: HttpClient) { }
 
   // Método para obtener registros desde el servidor
