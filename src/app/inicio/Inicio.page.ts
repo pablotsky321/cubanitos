@@ -1,7 +1,6 @@
 import { Component} from '@angular/core';
 import { OnInit } from '@angular/core';
 import { DataService } from 'services/data.service';
-import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { ClientService } from 'services/client.service';
 @Component({
