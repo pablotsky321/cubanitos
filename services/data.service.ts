@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-  private url='https://0d7e-179-19-237-212.ngrok-free.app';
+  private url='http://localhost:3000';
   constructor(private http: HttpClient) { }
 
   // Método para obtener registros desde el servidor
