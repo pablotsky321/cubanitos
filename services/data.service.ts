@@ -5,20 +5,20 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'https://6933-2801-13-e800-200-70d6-5394-88d2-676a.ngrok-free.app/api/productos'; 
-  private serverUrl = 'https://6933-2801-13-e800-200-70d6-5394-88d2-676a.ngrok-free.app/api/productos';
-  private loginUrl = 'https://6933-2801-13-e800-200-70d6-5394-88d2-676a.ngrok-free.app/api/clientes/login';
-  private insertClienteUrl='https://6933-2801-13-e800-200-70d6-5394-88d2-676a.ngrok-free.app/registro_cliente';
+  private apiUrl = 'https://2762-179-19-237-212.ngrok-free.app/api/productos'; 
+  private serverUrl = 'https://2762-179-19-237-212.ngrok-free.app/api/detalle_producto';
+  private loginUrl = 'https://2762-179-19-237-212.ngrok-free.app/api/clientes/login';
+  private insertClienteUrl='https://2762-179-19-237-212.ngrok-free.app/registro_cliente';
   constructor(private http: HttpClient) { }
 
   // Método para obtener registros desde el servidor
   obtenerRegistros() {
-    return this.http.get(`${this.apiUrl}`);
+    return this.http.post(`${this.apiUrl}`,"ficticio");
   }
 
   verPr(id_producto:String){
-    const url = `${this.serverUrl}/${id_producto}`;
-    return this.http.get(url);
+    const url = `${this.serverUrl}`;
+    return this.http.post(url,id_producto);
   }
 
   login_user(cliente:{}){
