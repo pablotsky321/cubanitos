@@ -9,7 +9,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "start-server":"node C:/Users/Admin/Documents/Programacion_Movil/Proyecto/servidor/server.js"
   },
   "private": true,
   "dependencies": {
