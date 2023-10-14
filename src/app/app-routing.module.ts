@@ -15,11 +15,6 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
-
-  {
-    path: '',
-    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
-  },
   {
     path: 'inicio',
     loadChildren: () => import('./inicio/Inicio.module').then( m => m.InicioPageModule)

@@ -1,3 +1,23 @@
-<ion-app>
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="openTab('inicio')">
+        Inicio
+      </ion-item>
+      <ion-item (click)="openTab('carrito')">
+        Carrito
+      </ion-item>
+      <ion-item (click)="openTab('cuenta')">
+        Cuenta
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-content id="main-content">
   <ion-router-outlet></ion-router-outlet>
-</ion-app>
+</ion-content>

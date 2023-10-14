@@ -23,7 +23,7 @@ export class LoginPage implements OnInit {
     if(this.resultado.length==0){
       this.mostrarDialogo()
     }else{
-      this.rout.navigate(['/tabs'])
+      this.rout.navigate(['/inicio'])
       this.clientService.setCliente(this.resultado[0]);
     }
     });
