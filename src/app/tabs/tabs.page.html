@@ -1,0 +1,33 @@
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+ <ion-tab-bar>
+  <ion-tab-button (click)="openTab('inicio')">
+    <ion-icon name="home-outline"></ion-icon>
+    <ion-label>Inicio</ion-label>
+  </ion-tab-button>
+ </ion-tab-bar>
+ <ion-tab-bar>
+  <ion-tab-button (click)="openTab('carrito')">
+    <ion-icon name="cart-outline"></ion-icon>
+    <ion-label>Carrito</ion-label>
+  </ion-tab-button>
+ </ion-tab-bar>
+ <ion-tab-bar>
+  <ion-tab-button (click)="openTab('cuenta')">
+    <ion-icon name="person-circle-outline"></ion-icon>
+    <ion-label>Cuenta</ion-label>
+  </ion-tab-button>
+ </ion-tab-bar>
+  </ion-content>
+</ion-menu>
+<ion-menu-toggle class="menu">
+  <ion-icon name="reorder-three-outline"></ion-icon>
+</ion-menu-toggle>
+<ion-content id="main-content">
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

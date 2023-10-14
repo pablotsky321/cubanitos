@@ -1,26 +1,3 @@
-<ion-menu side="start" contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menú</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item (click)="openTab('inicio')">
-        Inicio
-      </ion-item>
-      <ion-item (click)="openTab('carrito')">
-        Carrito
-      </ion-item>
-      <ion-item (click)="openTab('cuenta')">
-        Cuenta
-      </ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
-<ion-menu-toggle class="menu">
-  <ion-icon name="reorder-three-outline"></ion-icon>
-</ion-menu-toggle>
-<ion-content id="main-content">
+<ion-content>
   <ion-router-outlet></ion-router-outlet>
 </ion-content>
