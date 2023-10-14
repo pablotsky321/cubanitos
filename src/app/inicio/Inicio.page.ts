@@ -11,7 +11,7 @@ import { ClientService } from 'services/client.service';
 
 export class InicioPage implements OnInit {
   
-  registros: any[]=[]; // Variable para almacenar los registros
+  registros: any[]=[]; 
   constructor(private dataService: DataService,private router:Router,private cl:ClientService) { }
 
   ver_producto(id_producto:String) {
