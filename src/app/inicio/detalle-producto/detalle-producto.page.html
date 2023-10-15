@@ -1,5 +1,8 @@
 <ion-content [fullscreen]="true">
  <body>
+  <ion-button (click)="volver()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </ion-button>
   <section *ngFor="let reg of resultado" class="contenedor">
     <article class="detalle">
       <img [src]="reg.imagen">
