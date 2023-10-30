@@ -1,13 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>orden</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">orden</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<ion-app>
+  <ion-item class=formulario>
+    <form (ngSubmit)="realizarOrden()" #formulario="ngForm" class="formulario">
+      <ion-item class="campo-ubicacion">
+        <ion-input placeholder="ubicacion" [(ngModel)]="ubicacion"></ion-input>
+      </ion-item>
+      <ion-item class="campo-metodo">
+        <ion-select [(ngModel)]="metodo_pago" placeholder="metodo de pago">
+          <ion-select-option value="tarjeta">Tarjeta</ion-select-option>
+          <ion-select-option value="efectivo">Efectivo</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button type="submit" [disabled]="formulario.invalid">Realizar orden</ion-button>
+    </form>
+  </ion-item>
+</ion-app>
