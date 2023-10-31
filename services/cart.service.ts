@@ -9,9 +9,10 @@ export class CartService{
     carrito: any[]=[]
     constructor(){}
 
-    agregarProducto(producto:{}){
+    agregarProducto(id_producto:string,cantidad:any,nombre:string,valor:any){
 
-    this.carrito.push(producto)
+      let valor_final=valor*cantidad
+      this.carrito.push({"id_producto":id_producto,"nombre":nombre,"valor":valor_final,"cantidad":cantidad})
 
     }
 

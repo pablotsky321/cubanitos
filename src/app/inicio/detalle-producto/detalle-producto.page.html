@@ -10,6 +10,7 @@
       <p>{{reg.descripcion}}</p>
       <p>{{reg.valor}}</p>
     </article>
+    <ion-input type="number" max="5" min="1" [(ngModel)]="cantidad"></ion-input>
     <ion-button (click)="agregarCarrito()">Agregar al carrito</ion-button>
   </section>
  </body>

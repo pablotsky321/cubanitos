@@ -9,17 +9,16 @@ import { Router } from '@angular/router';
 })
 export class CarritoPage implements OnInit { 
   mostrarComponente: boolean = false;
-  productos:any[]=[]
+
 
   constructor(private cartS:CartService, private router:Router) { }
 
   ngOnInit() {
-    this.productos=this.cartS.obtenerCarrito();
     this.actualizar()
   }
 
   actualizar(){
-    if(this.productos.length>0){
+    if(this.cartS.obtenerCarrito().length>0){
       this.mostrarComponente=true
     }else{
       this.mostrarComponente=false

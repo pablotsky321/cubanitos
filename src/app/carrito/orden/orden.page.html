@@ -2,15 +2,15 @@
   <ion-item class=formulario>
     <form (ngSubmit)="realizarOrden()" #formulario="ngForm" class="formulario">
       <ion-item class="campo-ubicacion">
-        <ion-input placeholder="ubicacion" [(ngModel)]="ubicacion"></ion-input>
+        <ion-input placeholder="ubicacion" [(ngModel)]="ubicacion" required></ion-input>
       </ion-item>
       <ion-item class="campo-metodo">
-        <ion-select [(ngModel)]="metodo_pago" placeholder="metodo de pago">
+        <ion-select [(ngModel)]="metodo_pago" placeholder="metodo de pago" required>
           <ion-select-option value="tarjeta">Tarjeta</ion-select-option>
           <ion-select-option value="efectivo">Efectivo</ion-select-option>
         </ion-select>
       </ion-item>
-      <ion-button type="submit" [disabled]="formulario.invalid">Realizar orden</ion-button>
+      <ion-button type="submit" [disabled]="formulario.invalid">Terminar orden</ion-button>
     </form>
   </ion-item>
 </ion-app>

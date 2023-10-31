@@ -11,6 +11,7 @@ import { DataService } from 'services/data.service';
 export class DetalleProductoPage implements OnInit {
   id_producto!:string;
   resultado:any;
+  cantidad!:number;
   constructor(private route: ActivatedRoute,private dataService:DataService,private cartS:CartService,private router:Router) { }
 
   ngOnInit() {
@@ -31,7 +32,7 @@ export class DetalleProductoPage implements OnInit {
 
 agregarCarrito(){
 
-  this.cartS.agregarProducto(this.resultado[0]);
+  this.cartS.agregarProducto(this.resultado[0].id,this.cantidad,this.resultado[0].nombre,this.resultado[0].valor);
 
 }
 
