@@ -10,7 +10,7 @@
     "cubanitosauth": {
       "hosting": {
         "app": [
-          "cubanosapp"
+          "cubanitosauth"
         ]
       }
     }

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class CarritoPage implements OnInit { 
   mostrarComponente: boolean = false;
-
+  productos!:any;
 
   constructor(private cartS:CartService, private router:Router) { }
 
@@ -18,7 +18,8 @@ export class CarritoPage implements OnInit {
   }
 
   actualizar(){
-    if(this.cartS.obtenerCarrito().length>0){
+    this.productos=this.cartS.obtenerCarrito()
+    if(this.productos.length>0){
       this.mostrarComponente=true
     }else{
       this.mostrarComponente=false

@@ -12,7 +12,7 @@ export class CartService{
     agregarProducto(id_producto:string,cantidad:any,nombre:string,valor:any){
 
       let valor_final=valor*cantidad
-      this.carrito.push({"id_producto":id_producto,"nombre":nombre,"valor":valor_final,"cantidad":cantidad})
+      this.carrito.push({"id":id_producto,"nombre":nombre,"valor_unitario":valor,"cantidad":cantidad,"valor":valor_final})
 
     }
 

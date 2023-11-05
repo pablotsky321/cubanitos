@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import {HttpClientModule } from '@angular/common/http';
 import { DataService } from 'services/data.service';
 import { FormsModule } from '@angular/forms';
-import {initializeApp}  from 'firebase/app'
 import { environment } from 'src/environments/environment';
 
 @NgModule({
