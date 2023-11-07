@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
         google()
         mavenCentral()
@@ -9,10 +9,15 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:8.0.0'
         classpath 'com.google.gms:google-services:4.3.15'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        implementation platform('com.google.firebase:firebase-bom:32.5.0')
+        implementation 'com.google.firebase:firebase-analytics'
     }
+}
+
+plugins {
+  id 'com.google.gms.google-services' version '4.4.0' apply false
+  id 'com.android.application'
+  id 'com.google.gms.google-services'
 }
 
 apply from: "variables.gradle"
