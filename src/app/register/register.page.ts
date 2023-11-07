@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from 'services/data.service';
+import { Injectable } from '@angular/core';
+import { collection, addDoc } from "firebase/firestore"; 
+import { firebaseConfig } from '../firebaseConfig';
+
 
 @Component({
   selector: 'app-register',
@@ -15,7 +19,7 @@ export class RegisterPage implements OnInit {
   numero_celular!:string
   clave!:string
   confirmarClave!:string
-  constructor(private dataS:DataService,private rout:Router) { }
+  constructor(private dataS:DataService,private rout:Router,private app:firebaseConfig) { }
   
   confirmaClave(){
     if (this.clave!=this.confirmarClave){

@@ -9,11 +9,13 @@ import { DataService } from 'services/data.service';
 import { FormsModule } from '@angular/forms';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
+import {getFirestore} from 'firebase/firestore'
+import { firebaseConfig } from './firebaseConfig';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule,FormsModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },DataService],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },DataService,firebaseConfig],
   bootstrap: [AppComponent],
 })
 export class AppModule {
@@ -31,5 +33,6 @@ export class AppModule {
 
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
+    const db=getFirestore(app);
   }
 }
