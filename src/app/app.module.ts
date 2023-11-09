@@ -19,20 +19,5 @@ import { firebaseConfig } from './firebaseConfig';
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor() {
-    const firebaseConfig = {
-      apiKey: 'AIzaSyDL7xSIGsS538vrb6CAYxYcn-cwa5LlFy8',
-      authDomain: 'cubanitosauth.firebaseapp.com',
-      databaseURL: 'https://cubanitosauth-default-rtdb.firebaseio.com',
-      projectId: 'cubanitosauth',
-      storageBucket: 'cubanitosauth.appspot.com',
-      messagingSenderId: '726569153516',
-      appId: '1:726569153516:web:4d4b1ee1450668dfc586c9',
-      measurementId: 'G-MWQ2CK33Y4',
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    const db=getFirestore(app);
-  }
+ 
 }
