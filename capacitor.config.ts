@@ -3,7 +3,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   appId: 'com.cubanitos.app',
   appName: 'cubanitos',
-  webDir: 'www',
+  webDir: 'www\browser',
   server: {
     androidScheme: 'https'
   }
