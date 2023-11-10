@@ -1,23 +1,73 @@
-body{
-    margin-left: 20px;
-    margin-top: 10px
+@media only screen and (max-width: 600px) {
+    body{
+        margin-left: 20px;
+        margin-top: 10px
+    }
+    .detalle{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    }
+    .detalle p{
+        margin-left: 10px;
+    }
+    .contenedor ion-input{
+    width: 200px;
+    }
+    .contenedor{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
-.detalle{
-background-color: whitesmoke;
-border-radius: 10px;
-width: 300px;
-height: 150px;
-justify-content: center;
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body{
+        margin-left: 20px;
+        margin-top: 10px
+    }
+    .detalle{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    }
+    .detalle p{
+        margin-left: 10px;
+    }
+    .contenedor ion-input{
+    width: 200px;
+    }
+    .contenedor{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
-.detalle p{
-    margin-left: 10px;
-}
-.contenedor ion-input{
-width: 200px;
-}
-.contenedor{
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+@media only screen and (min-width: 1025px) {
+    body{
+        margin-left: 20px;
+        margin-top: 10px
+    }
+    .detalle{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    }
+    .detalle p{
+        margin-left: 10px;
+    }
+    .contenedor ion-input{
+    width: 200px;
+    }
+    .contenedor{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 
