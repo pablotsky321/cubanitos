@@ -1,14 +1,49 @@
-.campo-ubicacion ion-input{
-    width: 100%;
-    padding-bottom: 20px;
+@media only screen and (max-width: 600px) {
+    .campo-ubicacion ion-input{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .campo-ubicacion{
+        width: 700px;
+    }
+    .campo-metodo ion-select{
+        width: 100%;
+    }
+    .campo-metodo{
+        width: 200px;
+        padding-bottom: 20px;
+    }
 }
-.campo-ubicacion{
-    width: 700px;
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .campo-ubicacion ion-input{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .campo-ubicacion{
+        width: 700px;
+    }
+    .campo-metodo ion-select{
+        width: 100%;
+    }
+    .campo-metodo{
+        width: 200px;
+        padding-bottom: 20px;
+    }
 }
-.campo-metodo ion-select{
-    width: 100%;
-}
-.campo-metodo{
-    width: 200px;
-    padding-bottom: 20px;
+
+@media only screen and (min-width: 1025px) {
+    .campo-ubicacion ion-input{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .campo-ubicacion{
+        width: 700px;
+    }
+    .campo-metodo ion-select{
+        width: 100%;
+    }
+    .campo-metodo{
+        width: 200px;
+        padding-bottom: 20px;
+    }
 }

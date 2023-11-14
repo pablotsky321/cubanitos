@@ -1,19 +1,66 @@
-body{
-    margin-left: 20px;
-    margin-top: 5px;
-}
-.productos{
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    width: 500px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-}
-.productos p{
-    margin-left: 20px;
+@media only screen and (max-width: 600px) {
+    body{
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .productos{
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        width: 500px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+    .productos p{
+        margin-left: 20px;
+    }
+    
+    .contenedor{
+        display: block;
+    }
 }
 
-.contenedor{
-    display: block;
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body{
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .productos{
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        width: 500px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+    .productos p{
+        margin-left: 20px;
+    }
+    
+    .contenedor{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    body{
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .productos{
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        width: 500px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+    .productos p{
+        margin-left: 20px;
+    }
+    
+    .contenedor{
+        display: block;
+    }
 }
