@@ -2,15 +2,15 @@
 </ion-header>
 <ion-content [fullscreen]="true">
   <body>
-<section *ngFor="let reg of registros" class="Productos">
-  <article>
+<div *ngFor="let reg of registros" class="Productos">
+  <div>
     <ion-button class="Producto" (click)='ver_producto(reg.id)'>
     <img [src]="reg.imagen">
     <p>{{reg.nombre}}</p>
     <p>{{reg.descripcion}}</p>
     <p>{{reg.valor}}</p>
   </ion-button>
-  </article>
-</section>
+</div>
+</div>
 </body>
 </ion-content>
